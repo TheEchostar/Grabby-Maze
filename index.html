@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maze Game with Difficulty</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Maze Game</h1>
+  
+  <!-- Difficulty Selector -->
+  <div>
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium" selected>Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+  <p>Use arrow keys to move. Reach the green goal!</p>
+  <button onclick="restartGame()">Restart</button>
+
+  <!-- Script at the bottom ensures DOM is ready -->
+  <script src="script.js"></script>
+</body>
+</html>
